@@ -9,7 +9,7 @@ import { MongooseModule } from '@nestjs/mongoose';
   imports: [
     UserModule,
     MongooseModule.forRoot(
-      `mongodb+srv://${process.env.MONGO_ATLAS_USER}:${process.env.MONGO_ATLAS_PASSWORD}@cluster0.suflu.mongodb.net/${process.env.MONGO_ATLAS_DB}?retryWrites=true&w=majority`,
+      `mongodb+srv://${process.env.MONGO_ATLAS_USER}:${process.env.MONGO_ATLAS_PASSWORD}@imssystem.5i4vezf.mongodb.net/${process.env.MONGO_ATLAS_DB}?retryWrites=true&w=majority&appName=IMSSYSTEM`,
     ),
   ],
   controllers: [AppController],
